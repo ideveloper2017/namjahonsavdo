@@ -1,5 +1,5 @@
 <div class="heroslider-wrapper">
-    <div class="heroslider-single" data-bgimage="{!! Theme::asset()->url('images/hero/heroimage-1.jpg') !!}" data-black-overlay="8">
+    <div class="heroslider-single" data-bgimage="{{ RvMedia::getImageUrl($slider->image, 'small', false, RvMedia::getDefaultImage()) }}" data-black-overlay="8">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-10">
