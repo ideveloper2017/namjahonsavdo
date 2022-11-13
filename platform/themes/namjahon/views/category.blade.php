@@ -18,12 +18,12 @@
                                     </div>
                                     <div class="tm-blog-content">
                                         <div class="tm-blog-meta">
-                                            <span><i class="fa fa-user-o"></i>By <a href="{{ $post->url }}">{{ $post->name }}</span>
+                                            <span><i class="fa fa-user-o"></i>By <a href="blog.html">Anderson</a></span>
                                             <span><i class="fa fa-calendar-o"></i>October
                                                                 15,
                                                                 2018</span>
                                         </div>
-                                        <h5><a href="blog-details.html">The Most Advance Business Plan</a></h5>
+                                        <h5><a href="{{ $post->url }}">{{ $post->name }}</a></h5>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                             eiusmod
                                             tempor incdidunt ut labore et.</p>
