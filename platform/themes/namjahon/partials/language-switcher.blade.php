@@ -30,7 +30,7 @@
         </div>
         @endif
 
-        <div class="padtop10 mb-2 language" style="display: none">
+        <div class="padtop10 mb-2 language">
             @if (setting('language_switcher_display', 'dropdown') == 'dropdown')
                 <div id="langMenuDropdow" class="dropdown-menu dropdown-menu-left" aria-labelledby="langMenu">
                     @foreach ($supportedLocales as $localeCode => $properties)
