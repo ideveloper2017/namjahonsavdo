@@ -35,7 +35,7 @@
                                 <ul>
 {{--                                    <li><i class="fa fa-clock-o"></i>{!! theme_option('dayofweek') !!}</li>--}}
                                     <li><a href="#" class="bvi-open"><i class="fa fa-eye"></i></a></li>
-                                    <li><a href="#" class="bvi-open"><i class="fa fa-mobile-phone"></i></a></li>
+                                    <li><a href="#" class="is_mobile"><i class="fa fa-mobile-phone"></i></a></li>
                                     <li> @if (is_plugin_active('language'))
                                             <div class="language d-inline-block font-small {{ $color ?? '' }}">
                                                 {!! Theme::partial('language-switcher', ['color' => $color ?? '']) !!}

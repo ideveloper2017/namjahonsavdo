@@ -45,6 +45,17 @@
 
 {!! Theme::footer() !!}
 <script type="text/javascript">
+    "use strict";
+
+    $(document).on('click','.is_mobile',function (e){
+        e.preventDefault();
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=500,height=750,left=100,top=100`;
+        window.open('https://namjahonsavdo.uz/', 'test', params)
+    });
+
+
     new isvek.Bvi();
+
+
 </script>
 
