@@ -18,7 +18,7 @@
                                     </div>
                                     <div class="tm-blog-content">
                                         <div class="tm-blog-meta">
-                                            <span><i class="fa fa-user-o"></i>By <a href="blog.html">Anderson</a></span>
+                                            <span><i class="fa fa-user-o"></i>By <a href="{{ $post->url }}">{{ $post->name }}</span>
                                             <span><i class="fa fa-calendar-o"></i>October
                                                                 15,
                                                                 2018</span>
