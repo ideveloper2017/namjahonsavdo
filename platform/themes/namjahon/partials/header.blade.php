@@ -33,7 +33,8 @@
                         <div class="col-md-5 col-12">
                             <div class="header-topinfo text-right">
                                 <ul>
-                                    <li><i class="fa fa-clock-o"></i>{!! theme_option('dayofweek') !!}</li>
+{{--                                    <li><i class="fa fa-clock-o"></i>{!! theme_option('dayofweek') !!}</li>--}}
+                                    <li><a href="#" class="bvi-open"></a><i class="fa fa-eye"></i></li>
                                     <li> @if (is_plugin_active('language'))
                                             <div class="language d-inline-block font-small {{ $color ?? '' }}">
                                                 {!! Theme::partial('language-switcher', ['color' => $color ?? '']) !!}

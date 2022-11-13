@@ -44,4 +44,7 @@
 </div>
 
 {!! Theme::footer() !!}
+<script type="text/javascript">
+    new isvek.Bvi();
+</script>
 

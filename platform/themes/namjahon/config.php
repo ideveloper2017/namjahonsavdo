@@ -56,6 +56,7 @@ return [
             $theme->asset()->usePath()->add('plugins', 'css/plugins.css');
             $theme->asset()->usePath()->add('style', 'css/style.css');
             $theme->asset()->usePath()->add('custom', 'css/custom.css');
+            $theme->asset()->usePath()->add('bvi.min', 'css/bvi.min.css');
 
             $theme->asset()->container('footer')->usePath()->add('modernizr-3.6.0.min', 'js/modernizr-3.6.0.min.js');
             $theme->asset()->container('footer')->usePath()->add('jquery.min', 'js/jquery.min.js');
@@ -65,6 +66,7 @@ return [
 //            $theme->asset()->container('footer')->usePath()->add('chart.min', 'js/chart.min.js');
 //            $theme->asset()->container('footer')->usePath()->add('chart-active', 'js/chart-active.js');
             $theme->asset()->container('footer')->usePath()->add('main', 'js/main.js');
+            $theme->asset()->container('footer')->usePath()->add('bvi.min', 'js/bvi.min.js');
 
             if (function_exists('shortcode')) {
                 $theme->composer(['page', 'post'], function (\Botble\Shortcode\View\View $view) {

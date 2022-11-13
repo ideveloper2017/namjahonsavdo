@@ -20,13 +20,11 @@
                             <div class="tm-blog-image"><a href="{{ $post->url }}" tabindex="-1">
                                     <img src="{{ RvMedia::getImageUrl($post->image, null, false, RvMedia::getDefaultImage())}}" alt="blog image"></a>
                             </div>
-
                             <div class="tm-blog-content">
                                 <div class="tm-blog-meta">
                                     <span><i class="fa fa-calendar-o"></i>{{ $post->created_at->format('d M, Y') }}</span>
                                 </div>
                                 <h5><a href="{{ $post->url }}" tabindex="-1">{{ $post->name }}</a></h5>
-
                             </div>
                         </div>
                     </div>
