@@ -3,6 +3,9 @@
         $posts = get_recent_posts($config['number_display']);
     @endphp
 
+
+
+
 <div class="col-lg-3 col-md-6 col-12">
         <div class="single-widget widget-recentpost">
             <h5 class="widget-title">{{ $config['name'] }}</h5>

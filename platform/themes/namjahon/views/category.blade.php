@@ -18,16 +18,12 @@
                                     </div>
                                     <div class="tm-blog-content">
                                         <div class="tm-blog-meta">
-                                            <span><i class="fa fa-user-o"></i>By <a href="blog.html">Anderson</a></span>
-                                            <span><i class="fa fa-calendar-o"></i>October
-                                                                15,
-                                                                2018</span>
+                                            @if ($post->author->username)
+                                                <span><i class="fa fa-user-o"></i>{{ $post->author->name }}</span>
+                                         @endif
+                                               <span><i class="fa fa-calendar-o"></i>{{ $post->created_at->translatedFormat('d.M.Y') }}</span>
                                         </div>
                                         <h5><a href="{{ $post->url }}">{{ $post->name }}</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                            eiusmod
-                                            tempor incdidunt ut labore et.</p>
-                                        <a href="blog-details.html" class="tm-readmore">Continue Reading...</a>
                                     </div>
                                 </div>
                             </div>
