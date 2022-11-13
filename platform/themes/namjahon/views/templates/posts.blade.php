@@ -33,10 +33,11 @@
                                 <p>{{ __('There is no data to display!') }}</p>
                             </div>
                         @endif
+                    </div>
                     <div class="tm-pagination mt-50">
                         {!! $posts->withQueryString()->links() !!}
                     </div>
-                </div>
+
             </div>
             </div>
             <div class="col-lg-4 col-12">
