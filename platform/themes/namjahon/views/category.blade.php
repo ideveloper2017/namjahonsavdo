@@ -56,9 +56,7 @@
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
-                    <!--// Single Widget -->
 
-                    <!-- Single Widget -->
                     <div class="single-widget widget-categories">
                         <h5 class="widget-title">Categories</h5>
                         <ul>
