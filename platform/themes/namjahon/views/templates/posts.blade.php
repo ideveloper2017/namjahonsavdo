@@ -5,32 +5,33 @@
 
                 <div class="tm-blog-list sticky-sidebar">
                     <div class="row mt-30-reverse blog-masonry-active">
-                        <!-- Single Blog -->
                         @if ($posts->count() > 0)
                             @foreach ($posts as $post)
-                        <div class="col-lg-6 col-md-6 col-12 mt-30 blog-masonry-item">
-                            <div class="blog-slider-item">
-                                <div class="tm-blog wow fadeInUp">
-                                    <div class="tm-blog-image">
-                                        <a href="{{ $post->url }}">
-                                            <img src="{{ RvMedia::getImageUrl($post->image, 'small', false, RvMedia::getDefaultImage()) }}" alt="blog image">
-                                        </a>
-                                    </div>
-                                    <div class="tm-blog-content">
-                                        <div class="tm-blog-meta">
-{{--                                            <span><i class="fa fa-user-o"></i>By <a href="blog.html">Anderson</a></span>--}}
-                                            <span><i class="fa fa-calendar-o"></i>{{ $post->created_at->translatedFormat('d.F.Y') }}</span>
+                                <div class="col-lg-6 col-md-6 col-12 mt-30 blog-masonry-item">
+                                    <div class="blog-slider-item">
+                                        <div class="tm-blog wow fadeInUp">
+                                            <div class="tm-blog-image">
+                                                <a href="{{ $post->url }}">
+                                                    <figure><img src="{{ RvMedia::getImageUrl($post->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""></figure>
+                                                </a>
+                                            </div>
+                                            <div class="tm-blog-content">
+                                                <div class="tm-blog-meta">
+                                                    @if ($post->author->username)
+                                                        <span><i class="fa fa-user-o"></i>{{ $post->author->name }}</span>
+                                                    @endif
+                                                    <span><i class="fa fa-calendar-o"></i>{{ $post->created_at->translatedFormat('d.M.Y') }}</span>
+                                                </div>
+                                                <h5><a href="{{ $post->url }}">{{ $post->name }}</a></h5>
+                                            </div>
                                         </div>
-                                        <h5><a href="{{ $post->url }}">{{ $post->name }}</a></h5>
-{{--                                        <p>{{ $post->description }}</p>--}}
-
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-
                             @endforeach
+                        @else
+                            <div class="alert alert-warning">
+                                <p>{{ __('There is no data to display!') }}</p>
+                            </div>
                         @endif
                     <div class="tm-pagination mt-50">
                         {!! $posts->withQueryString()->links() !!}

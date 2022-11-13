@@ -12,7 +12,7 @@
                             <div class="blog-slider-item">
                                 <div class="tm-blog wow fadeInUp">
                                     <div class="tm-blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="{{ $post->url }}">
                                             <figure><img src="{{ RvMedia::getImageUrl($post->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""></figure>
                                         </a>
                                     </div>
