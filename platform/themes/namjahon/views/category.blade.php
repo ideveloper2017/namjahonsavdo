@@ -13,7 +13,7 @@
                                 <div class="tm-blog wow fadeInUp">
                                     <div class="tm-blog-image">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/blog/blog-image-1.jpg" alt="blog image">
+                                            <figure><img src="{{ RvMedia::getImageUrl($post->image, 'medium', false, RvMedia::getDefaultImage()) }}" alt=""></figure>
                                         </a>
                                     </div>
                                     <div class="tm-blog-content">
