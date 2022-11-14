@@ -40,17 +40,20 @@
         <div class="row no-gutters">
             <div class="col-lg-7">
                 <div class="tm-contact-formwrapper">
-                    <h5>Let’s get in touch</h5>
+                    <h5>{{ __('Contact Us For Any Questions') }}</h5>
                     {!! Form::open(['route' => 'public.send.contact', 'class' => 'contact-form', 'method' => 'POST']) !!}
                         <div class="tm-form-inner">
                             <div class="tm-form-field">
-                                <input type="text" name="name" placeholder="Name*">
+                                <input type="text"  name="name" value="{{ old('name') }}" placeholder="{{ __('Name') }}">
                             </div>
                             <div class="tm-form-field">
-                                <input type="email" name="email" placeholder="Email*">
+                                <input type="email"name="email" value="{{ old('email') }}" placeholder="{{ __('Email') }}">
                             </div>
                             <div class="tm-form-field">
-                                <input type="text" name="subject" placeholder="Subject*">
+                                <input type="text" name="subject" value="{{ old('subject') }}" placeholder="{{ __('Subject') }}">
+                            </div>
+                            <div class="tm-form-field">
+                                <input name="phone" value="{{ old('phone') }}" placeholder="{{ __('Phone') }}" type="tel">
                             </div>
                             <div class="tm-form-field">
                                 <textarea name="message" cols="30" rows="5"  placeholder="{{ __('Message') }}*">{{ old('content') }}</textarea>
