@@ -64,7 +64,7 @@
                                 </div>
                             @endif
                             <div class="tm-form-field">
-                                <button type="submit" class="tm-button">Send Message <b></b></button>
+                                <button type="submit" class="tm-button">{{ __('Send') }}<b></b></button>
                             </div>
                         </div>
                     {!! Form::close() !!}
