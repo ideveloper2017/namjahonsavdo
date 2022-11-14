@@ -56,7 +56,7 @@
                                 <input name="phone" value="{{ old('phone') }}" placeholder="{{ __('Phone') }}" type="tel">
                             </div>
                             <div class="tm-form-field">
-                                <textarea name="message" cols="30" rows="5"  placeholder="{{ __('Message') }}*">{{ old('content') }}</textarea>
+                                <textarea name="content" cols="30" rows="5"  placeholder="{{ __('Message') }}*">{{ old('content') }}</textarea>
                             </div>
                             @if (setting('enable_captcha') && is_plugin_active('captcha'))
                                 <div class="col-md-12">
@@ -69,6 +69,10 @@
                         </div>
                     {!! Form::close() !!}
                     <div class="contact-form-group"><p>{!! clean(__('The field with (<span style="color:#FF0000;">*</span>) is required.')) !!}</p></div>
+                </div>
+                <div class="contact-form-group">
+                    <div class="contact-message contact-success-message" style="display: none"></div>
+                    <div class="contact-message contact-error-message" style="display: none"></div>
                 </div>
             </div>
             <div class="col-lg-5">
