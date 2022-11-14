@@ -65,7 +65,9 @@
             </div>
             <div class="col-lg-5">
                 <div class="tm-contact-map">
-                    <div id="google-map"></div>
+                    <div id="google-map">
+                        [google-map]Namangan chorsu[/google-map]
+                    </div>
                 </div>
             </div>
         </div>
