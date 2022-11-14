@@ -41,7 +41,7 @@
             <div class="col-lg-7">
                 <div class="tm-contact-formwrapper">
                     <h5>Let’s get in touch</h5>
-                    <form action="assets/php/mailer.php" id="tm-contactform" class="tm-form">
+                    {!! Form::open(['route' => 'public.send.contact', 'class' => 'contact-form', 'method' => 'POST']) !!}
                         <div class="tm-form-inner">
                             <div class="tm-form-field">
                                 <input type="text" name="name" placeholder="Name*">
@@ -53,13 +53,18 @@
                                 <input type="text" name="subject" placeholder="Subject*">
                             </div>
                             <div class="tm-form-field">
-                                <textarea name="message" cols="30" rows="5" placeholder="Message*"></textarea>
+                                <textarea name="message" cols="30" rows="5"  placeholder="{{ __('Message') }}*">{{ old('content') }}</textarea>
                             </div>
+                            @if (setting('enable_captcha') && is_plugin_active('captcha'))
+                                <div class="col-md-12">
+                                    {!! Captcha::display() !!}
+                                </div>
+                            @endif
                             <div class="tm-form-field">
                                 <button type="submit" class="tm-button">Send Message <b></b></button>
                             </div>
                         </div>
-                    </form>
+                    {!! Form::close() !!}
                     <p class="form-messages"></p>
                 </div>
             </div>
