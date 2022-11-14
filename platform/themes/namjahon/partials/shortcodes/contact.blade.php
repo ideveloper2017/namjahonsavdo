@@ -28,9 +28,9 @@
                                 <span class="tm-contact-icon">
                                     <i class="flaticon-mail"></i>
                                 </span>
-                    <h5>Address</h5>
-                    <p>Email: <a href="#">info@example.com</a></p>
-                    <p>Skype: <a href="#">example.name</a></p>
+                    <h5>{{ __('Email') }}</h5>
+                    <p>Email: {!! theme_option('email') !!}</p>
+
                 </div>
             </div>
 
