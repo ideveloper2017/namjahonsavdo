@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     {!! Form::close() !!}
-                    <p class="form-messages"></p>
+                    <div class="contact-form-group"><p>{!! clean(__('The field with (<span style="color:#FF0000;">*</span>) is required.')) !!}</p></div>
                 </div>
             </div>
             <div class="col-lg-5">
