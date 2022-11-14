@@ -7,8 +7,8 @@
                                 <span class="tm-contact-icon">
                                     <i class="flaticon-pin"></i>
                                 </span>
-                    <h5>Address</h5>
-                    <p>7 Roanoke Rd, North York, Ontario, Canada</p>
+                    <h5>{{ __('Address') }}</h5>
+                    <p>{!! theme_option('address') !!}</p>
                 </div>
             </div>
 
@@ -17,9 +17,9 @@
                                 <span class="tm-contact-icon">
                                     <i class="flaticon-phone"></i>
                                 </span>
-                    <h5>Phone</h5>
-                    <p><a href="#">1-800-915-6270</a></p>
-                    <p><a href="#">1-800-915-6272</a></p>
+                    <h5>{{ __('Phone') }}</h5>
+                    <p>{!! theme_option('phone') !!}</p>
+
                 </div>
             </div>
 
