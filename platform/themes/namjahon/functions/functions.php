@@ -567,3 +567,22 @@ function getPostTotalFavorite(string $postId)
         'type'    => 'favorite'
     ]);
 }
+
+
+if (!function_exists('get_external_link')) {
+    function get_external_link($post)
+    {
+        if (is_plugin_active('external-source') && !empty($post->external_source_link)) {
+            return $post->external_source_link;
+        }
+
+        return $post->url;
+    }
+}
+
+if (!function_exists('is_external_link')) {
+    function is_external_link($post)
+    {
+        return is_plugin_active('external-source') && !empty($post->external_source_link);
+    }
+}
