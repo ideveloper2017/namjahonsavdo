@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-4 col-12">
                     <div class="footer-copyrightsocial">
-
+                        <!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=91733134&amp;from=informer" target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/91733134/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="91733134" data-lang="ru" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(91733134, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <!-- /Yandex.Metrika counter -->
                         <ul>
                             @for ($i = 1; $i <= 5; $i++)
                                 @if (theme_option('social_' . $i . '_url') && theme_option('social_' . $i . '_name'))
