@@ -8,7 +8,7 @@
 
 
                 <div class="col-lg-3 col-md-6 col-12">
-                <script type="text/javascript" src="//simpoll.ru/embed/framejs/48952c12"></script><noscript><a href="http://simpoll.ru/run/survey/48952c12">Simpoll.ru</a></noscript>
+                    <div class="strawpoll-embed" id="strawpoll_kogjv0ez1g6" style="height: 644px; max-width: 640px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;"><iframe title="StrawPoll Embed" id="strawpoll_iframe_kogjv0ez1g6" src="https://strawpoll.com/embed/polls/kogjv0ez1g6" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe><script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script></div>
                 </div>
             </div>
         </div>
