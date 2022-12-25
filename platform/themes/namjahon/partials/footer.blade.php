@@ -5,6 +5,11 @@
         <div class="container">
             <div class="row widgets footer-widgets">
                 {!! dynamic_sidebar('footer_sidebar_1') !!}
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                <script type="text/javascript" src="//simpoll.ru/embed/framejs/48952c12"></script><noscript><a href="http://simpoll.ru/run/survey/48952c12">Simpoll.ru</a></noscript>
+                </div>
             </div>
         </div>
     </div>
@@ -26,12 +31,6 @@
                                     <li><a style="background: {{ theme_option('social_' . $i . '_color') }}" href="{{ theme_option('social_' . $i . '_url') }}" target="_blank" title="{{ theme_option('social_' . $i . '_name') }}"><i class="elegant-icon {{ theme_option('social_' . $i . '_icon') }}"></i></a></li>
                                 @endif
                             @endfor
-{{--                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>--}}
-{{--                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i--}}
-{{--                                        class="fa fa-facebook-f"></i></a></li>--}}
-{{--                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Skype"><i class="fa fa-skype"></i></a></li>--}}
-{{--                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i--}}
-{{--                                        class="fa fa-pinterest-p"></i></a></li>--}}
                         </ul>
                     </div>
                 </div>
